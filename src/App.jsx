@@ -9,10 +9,14 @@ import Footer from "./components/Footer/Footer";
 import Login from "./components/Login/Login";
 import Home from "./components/Home/Home";
 import MyThemeContext from "./Context/ThemeContext";
+import { CssBaseline } from '@mui/material';
+
 
 function App() {
   return (
-    <MyThemeContext>
+    <>
+    <CssBaseline />
+       <MyThemeContext>
       <BrowserRouter>
         <NavBar />
         <Routes>
@@ -27,6 +31,10 @@ function App() {
         <Footer />
       </BrowserRouter>
     </MyThemeContext>
+    
+    
+    </>
+ 
   );
 }
 
